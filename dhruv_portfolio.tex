@@ -1,0 +1,257 @@
+%-------------------------
+% ATS-Optimized Resume - Microsoft Explore Program
+% Target: Explore Program Internship 2026
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1cm, top=0.8cm, right=1cm, bottom=0.8cm}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{ #2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} #2 & \text{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \text{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeAchievements}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l}
+        \textbf{#1} \\\\
+        \footnotesize{\textit{#2}} \\\\
+        \footnotesize{\textit{#3}}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+%-------------------------------------------
+% DEFINE ELEMENTS
+\newcommand{\name}{Dhruv Pokhriyal}
+\newcommand{\course}{Bachelor of Technology}
+\newcommand{\phone}{(+91) 9818706670}
+\newcommand{\emailb}{dhruvpokhriyaltech@gmail.com}
+\newcommand{\github}{Dhruvpokhriyal}
+\newcommand{\linkedin}{dhruvpokhriyal}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+\includegraphics[width=2cm,clip]{logo.png}
+}\parbox{\dimexpr\linewidth-2.5cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & \phone\\
+  \course &  \href{mailto:\emailb}{\emailb}\\
+  {Computer Science and Engineering} & \href{https://github.com/\github}{GitHub} \& \href{https://www.linkedin.com/in/\linkedin/}{LinkedIn} \\
+  {Indian Institute Of Technology, Tirupati} 
+\end{tabularx}
+}
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+\setlength{\tabcolsep}{5pt}
+\small{\begin{tabularx}
+{\dimexpr\textwidth-1mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech (CSE) & Indian Institute of Technology, Tirupati & 8.18 & Aug 2024 - May 2028\\
+  \hline
+  Senior Secondary & CBSE Board & 96.0\% & Apr 2023 - Apr 2024 \\
+  \hline
+  Secondary & CBSE Board & 97.0\% & Apr 2021 - Apr 2022 \\
+  \hline
+\end{tabularx}}
+\vspace{-2mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+
+        \resumeProject
+      {Vigil360 - Real-Time Fraud Detection Platform}
+      {A Streaming-native compliance engine built in collaboration with cross-functional team of 8 members}
+      {Oct 2025 - Dec 2025}
+      {}
+      \resumeItemListStart
+        \item {Collaborated to analyze requirements, forecast costs, and implement fraud detection features and services for banking compliance}
+        \item {Architected a scalable system to orchestrate high-throughput KYC processing, achieving 3x the industry standard of 100 forms/day -- demonstrating ability to exceed requirements}
+        \item {Leveraged Python, Kafka, PostgreSQL, FastAPI, and React to deliver production-grade backend services scaling up to 300 users}
+        \item {Engineered facial recognition pipeline using Google Image Search and DeepFace; designed RESTful APIs with FastAPI and React frontend}
+    \resumeItemListEnd
+
+
+    \resumeProject
+      {StudySnapAI - AI-Powered Learning Platform}
+      {End-to-end software development project empowering students with personalized learning tools}
+      {Mar 2025 - Jul 2025}
+      {\href{https://github.com/DhruvPokhriyal/dashboard-studysnapai}{GitHub}}
+      \resumeItemListStart
+        \item {Delivered an end-to-end EdTech platform; scaled to 50 users within the first 1.5 weeks of launch, demonstrating product-market fit}
+        \item {Implemented FastAPI backend and React frontend with integrated AI-driven summarization}
+        \item {Incorporated 50+ user feedback to evaluate requirements and refined platform features and services}
+    \resumeItemListEnd
+    
+   \resumeProject
+      {Student Affairs Website - IIT Tirupati}
+      {Full-stack web application for institutional student services and administration}
+      {Jan 2025 - Apr 2026}
+      {\href{https://sa.iittp.ac.in/}{Website}}
+      \resumeItemListStart
+        \item {Facilitated pre-deployment phase of official platform; Remediated critical defects and optimized performance for 2,000+ concurrent users}
+        \item {Spearheaded with Computer Center team to enhance features, administer databases, and ensure system reliability for high-traffic operations scaling upto 2000 concurrent users}
+    \resumeItemListEnd
+
+
+    % \resumeProject
+    %   {Sangam -- Real-Time Translation Chat App}
+    %   {AI-powered chat application with real-time cross-language translation}
+    %   {Jun 2025 -- Jul 2025}
+    %   {\href{https://github.com/DhruvPokhriyal/sangam}{GitHub}}
+    %   \resumeItemListStart
+    %     \item {Developed real-time messaging application using React, Firebase, and Google Gemini AI with context-aware translations and image sharing}
+    %     \item {Established state management via Zustand; Crafted glassmorphism UI with TailwindCSS for modern user experience}
+    % \resumeItemListEnd
+      
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------TECHNICAL SKILLS-----------------
+\section{\textbf{Technical Skills}}
+\resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages:}{Python, Java, C++, JavaScript, C, Dart, Typescript}
+  \resumeSubItem{Software Development:}{Full-Stack Development, RESTful APIs, Monolith, Microservices, System Design}
+  \resumeSubItem{Web \& Mobile:}{React, NextJS, React Native, Tailwind CSS, Nativewind CSS, Flutter, Zustand}
+  \resumeSubItem{Backend \& Frameworks:}{FastAPI, Docker, Nginx, Spring, Spring Boot, Hibernate JPA, Node.js, Redis, Locust, Pytest, Jest}
+  \resumeSubItem{Databases \& Cloud:}{PostgreSQL, MySQL, MongoDB , ChromaDB, Firebase, GCP, Kafka}
+  \resumeSubItem{AI/ML:}{Machine Learning, DeepFace, RAG, Google ADK, Q-Learning, DQL, Agentic AI, Langchain, Pathway}
+\resumeHeadingSkillEnd
+
+%-----------KEY COURSES-----------------
+\section{\textbf{Key Courses Taken}}
+\resumeHeadingSkillStart
+  \resumeSubItem{Computer Science:}{Data Structures and Algorithms, Software Engineering, Object-Oriented Programming, Digital Logic Design, Statistics}
+\resumeHeadingSkillEnd
+
+%-----------POSITIONS OF RESPONSIBILITY-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Deputy Contingent Leader,}{ Inter IIT Council, IIT Tirupati}{Dec 2025 - Present}
+\resumePOR{Head,}{ Google Developer Group, IIT Tirupati}{Aug 2025 - Present}
+\resumePOR{Deputy Head,}{ AI ML Club, IIT Tirupati}{Jan 2025 - Present}
+\resumePOR{Core Member,}{ Coding Club, IIT Tirupati}{Jan 2025 - Present}
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-----------ACHIEVEMENTS-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Inter IIT Tech Meet 14.0}{ Ranked 5th nationally in AI ML High Prep Problem Statement}{}
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-----------CERTIFICATIONS-----------------
+\section{\textbf{Certifications}}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{}{ Completed Machine Learning Specialization by Stanford University (Coursera)}{}
+\resumeSubHeadingListEnd
+
+\end{document}
