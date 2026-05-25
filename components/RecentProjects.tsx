@@ -32,11 +32,7 @@ const RecentProjects = () => {
                                 <img
                                     src={item.img}
                                     alt="cover"
-                                    className={`z-10 absolute bottom-0 ${
-                                        item.id % 2 === 0
-                                            ? "-rotate-[3deg]"
-                                            : "rotate-[3deg]"
-                                    }`}
+                                    className="z-10 absolute bottom-0 rotate-[3deg]"
                                 />
                             </div>
 
