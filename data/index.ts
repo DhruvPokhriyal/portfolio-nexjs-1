@@ -75,7 +75,13 @@ export const projects = [
         title: "Vigil360 — Real-Time Fraud Detection Platform",
         des: "A streaming-native compliance engine with KYC processing achieving 3x the industry standard. Built with a cross-functional team of 8 members.",
         img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/c.svg", "/git.svg"],
+        iconLists: [
+            "/re.svg",
+            "/tail.svg",
+            "/ts.svg",
+            "/git.svg",
+            "/FastAPI.svg",
+        ],
         link: "https://github.com/DhruvPokhriyal",
     },
     {
@@ -83,7 +89,7 @@ export const projects = [
         title: "StudySnapAI — AI-Powered Learning Platform",
         des: "End-to-end EdTech platform with AI-driven summarization. Scaled to 50 users within 1.5 weeks of launch with FastAPI backend and React frontend.",
         img: "/p2.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/FastAPI.svg"],
         link: "https://github.com/DhruvPokhriyal/dashboard-studysnapai",
     },
     {
@@ -91,7 +97,7 @@ export const projects = [
         title: "Student Affairs Website — IIT Tirupati",
         des: "Official full-stack institutional platform serving 2,000+ concurrent users. Remediated critical defects and optimized performance in collaboration with the Computer Center team.",
         img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
         link: "https://sa.iittp.ac.in/",
     },
     {
@@ -99,7 +105,7 @@ export const projects = [
         title: "Sangam — Real-Time Translation Chat App",
         des: "AI-powered chat application with real-time cross-language translation using React, Firebase, and Google Gemini AI. Glassmorphism UI with TailwindCSS.",
         img: "/p4.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/firebase.svg"],
         link: "https://github.com/DhruvPokhriyal/sangam",
     },
 ];
