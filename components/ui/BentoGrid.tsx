@@ -2,9 +2,8 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
-// Dynamically imported with ssr:false — these libraries access `document`
-// at module-load time (react-lottie, Three.js/COBE) which crashes Next.js SSR
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+// lottie-react replaces the broken react-lottie (known unmount crash bug)
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 const GridGlobe = dynamic(() => import("./GridGlobe"), { ssr: false });
 
 import { cn } from "@/lib/utils";
@@ -58,13 +57,11 @@ export const BentoGridItem = ({
 
     const [copied, setCopied] = useState(false);
 
-    const defaultOptions = {
+    // lottie-react uses flat props instead of the options object
+    const lottieOptions = {
+        animationData: animationData,
         loop: copied,
         autoplay: copied,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-        },
     };
 
     const handleCopy = () => {
@@ -187,9 +184,8 @@ export const BentoGridItem = ({
                             >
                                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                                 <Lottie
-                                    options={defaultOptions}
-                                    height={200}
-                                    width={400}
+                                    {...lottieOptions}
+                                    style={{ height: 200, width: 400 }}
                                 />
                             </div>
 
